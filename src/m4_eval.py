@@ -10,7 +10,7 @@ if hasattr(sys.stderr, "reconfigure"):
 from dataclasses import dataclass
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import EVALUATOR_MODEL, TEST_SET_PATH
+from config import EMBEDDING_MODEL, EVALUATOR_MODEL, OPENAI_BASE_URL, TEST_SET_PATH
 
 
 @dataclass
@@ -61,6 +61,8 @@ def evaluate_ragas(questions: list[str], answers: list[str],
 
     try:
         from ragas import evaluate
+        from ragas.embeddings import HuggingfaceEmbeddings
+        from ragas.llms import llm_factory
         from ragas.metrics import faithfulness, answer_relevancy, context_precision, context_recall
         from datasets import Dataset
 
@@ -70,9 +72,15 @@ def evaluate_ragas(questions: list[str], answers: list[str],
             "contexts": contexts,
             "ground_truth": ground_truths,
         })
+        evaluator_llm = llm_factory(
+            model=EVALUATOR_MODEL,
+            base_url=OPENAI_BASE_URL or None,
+        )
+        evaluator_embeddings = HuggingfaceEmbeddings(model_name=EMBEDDING_MODEL)
         result = evaluate(
             dataset,
             metrics=[faithfulness, answer_relevancy, context_precision, context_recall]
+            , llm=evaluator_llm, embeddings=evaluator_embeddings
         )
         df = result.to_pandas()
         per_question = [
@@ -94,7 +102,10 @@ def evaluate_ragas(questions: list[str], answers: list[str],
             "context_precision": float(result.get("context_precision", 0.0)),
             "context_recall": float(result.get("context_recall", 0.0)),
             "per_question": per_question,
-            "metadata": {"evaluator_models": [EVALUATOR_MODEL]},
+            "metadata": {
+                "evaluator_models": [EVALUATOR_MODEL],
+                "embedding_model": EMBEDDING_MODEL,
+            },
         }
     except Exception as e:
         print(f"  ⚠️  RAGAS evaluation failed: {e}")
@@ -118,7 +129,10 @@ def evaluate_ragas(questions: list[str], answers: list[str],
             "context_recall": 0.0,
             "per_question": per_question
             ,
-            "metadata": {"evaluator_models": [EVALUATOR_MODEL]}
+            "metadata": {
+                "evaluator_models": [EVALUATOR_MODEL],
+                "embedding_model": EMBEDDING_MODEL,
+            }
         }
 
 
