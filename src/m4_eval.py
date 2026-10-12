@@ -25,6 +25,11 @@ class EvalResult:
     context_recall: float
 
 
+def _bounded_score(value: object) -> float:
+    """Normalize tiny floating-point drift at the metric boundaries."""
+    return max(0.0, min(1.0, float(value or 0.0)))
+
+
 def load_test_set(path: str = TEST_SET_PATH) -> list[dict]:
     """Load test set from JSON. (Đã implement sẵn)"""
     with open(path, encoding="utf-8") as f:
@@ -89,18 +94,18 @@ def evaluate_ragas(questions: list[str], answers: list[str],
                 answer=row["answer"],
                 contexts=row["contexts"] if isinstance(row["contexts"], list) else [str(row["contexts"])],
                 ground_truth=row["ground_truth"],
-                faithfulness=float(row.get("faithfulness", 0.0) or 0.0),
-                answer_relevancy=float(row.get("answer_relevancy", 0.0) or 0.0),
-                context_precision=float(row.get("context_precision", 0.0) or 0.0),
-                context_recall=float(row.get("context_recall", 0.0) or 0.0)
+                faithfulness=_bounded_score(row.get("faithfulness")),
+                answer_relevancy=_bounded_score(row.get("answer_relevancy")),
+                context_precision=_bounded_score(row.get("context_precision")),
+                context_recall=_bounded_score(row.get("context_recall"))
             )
             for _, row in df.iterrows()
         ]
         return {
-            "faithfulness": float(result.get("faithfulness", 0.0)),
-            "answer_relevancy": float(result.get("answer_relevancy", 0.0)),
-            "context_precision": float(result.get("context_precision", 0.0)),
-            "context_recall": float(result.get("context_recall", 0.0)),
+            "faithfulness": _bounded_score(result.get("faithfulness")),
+            "answer_relevancy": _bounded_score(result.get("answer_relevancy")),
+            "context_precision": _bounded_score(result.get("context_precision")),
+            "context_recall": _bounded_score(result.get("context_recall")),
             "per_question": per_question,
             "metadata": {
                 "evaluator_models": [EVALUATOR_MODEL],
