@@ -24,7 +24,7 @@
 | **Task C.1** | Presidio detect/redact CCCD/CMND, VN phone, email | 10 | Member 2 | **Bắt buộc** | `src/phase_c_guard.py`, Pytest log | `pytest tests/test_phase_c.py -k test_pii_scan` | **Unit Passed (5/5)** |
 | **Task C.2** | Async input rail phản ánh activated_rails | 5 | Member 2 | **Bắt buộc** | `src/phase_c_guard.py`, Pytest log | `pytest tests/test_phase_c.py -k test_input_rail` | **Unit Passed (2/2)** |
 | **Task C.3** | 20 attacks $\ge 15/20$; clean controls $8/8$ allowed | 10 | Member 2 | **Bắt buộc** | `src/phase_c_guard.py`, `artifacts/guard_results.json` | `pytest tests/test_phase_c.py -k test_adversarial_suite` | Pending |
-| **Task C.4** | Output rail: giữ output sạch, redact output nhạy cảm | 5 | Member 2 | **Bắt buộc** | `src/phase_c_guard.py`, `artifacts/guard_results.json` | `pytest tests/test_phase_c.py -k test_output_rail` | Pending |
+| **Task C.4** | Output rail: giữ output sạch, redact output nhạy cảm | 5 | Member 2 | **Bắt buộc** | `src/phase_c_guard.py`, Pytest log | `pytest tests/test_phase_c.py -k test_output_checks_supplied_answer` | **Unit Passed (2/2)** |
 | **Task C.5** | Latency input layers: warm-up 2, $\ge 20$ samples, linear P95 | 5 | Member 2 | **Bắt buộc** | `src/phase_c_guard.py`, `artifacts/guard_results.json` | `pytest tests/test_phase_c.py -k test_latency` | Pending |
 | **Bonus C** | Attacks $\ge 18/20$ VÀ clean controls $8/8$ allowed | +3 (Bonus) | Member 2 | **Bonus** | `artifacts/guard_results.json`, `doc/reports/blueprint.md` | Đối chiếu pass counts trong guard_results | Pending |
 | **Task D.1** | Bản thiết kế CI/CD Blueprint đầy đủ, không để trống | *Tiền đề (-10đ nếu thiếu)* | Member 2 | **Bắt buộc** | `doc/reports/blueprint.md` | `scripts/check_lab.py` | Pending |
