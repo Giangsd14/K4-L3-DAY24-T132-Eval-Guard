@@ -83,7 +83,7 @@ def build_pipeline():
 
 
 def run_query(q: str, search, reranker, top_k: int, client=None) -> tuple[str, list[str], str, str | None]:
-    from config import OPENAI_API_KEY
+    from config import OPENAI_API_KEY, openai_client
 
     results = search.search(q)
     docs    = [{"text": r.text, "score": r.score, "metadata": r.metadata} for r in results]
@@ -93,8 +93,7 @@ def run_query(q: str, search, reranker, top_k: int, client=None) -> tuple[str, l
     if (OPENAI_API_KEY or client is not None) and contexts:
         try:
             if client is None:
-                from openai import OpenAI
-                client = OpenAI()
+                client = openai_client()
             ctx = "\n\n".join(contexts)
             resp = client.chat.completions.create(
                 model=GENERATION_MODEL,
@@ -138,11 +137,10 @@ def main(argv=None):
 
     print(f"\nRunning {len(test_set)} queries...")
     answers = []
-    from config import OPENAI_API_KEY
+    from config import OPENAI_API_KEY, openai_client
     client = None
     if OPENAI_API_KEY:
-        from openai import OpenAI
-        client = OpenAI()
+        client = openai_client()
     t_start = time.time()
 
     for i, item in enumerate(test_set):

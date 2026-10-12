@@ -5,9 +5,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# --- API Keys ---
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+# --- OpenAI-compatible API configuration ---
+OPENAI_API_KEY = os.getenv("LAB_API_KEY") or os.getenv("OPENAI_API_KEY", "")
+OPENAI_BASE_URL = os.getenv("LAB_BASE_URL") or os.getenv("OPENAI_BASE_URL", "")
 HF_TOKEN = os.getenv("HF_TOKEN", "")  # Optional: for HuggingFace models
+
+if OPENAI_API_KEY:
+    os.environ.setdefault("OPENAI_API_KEY", OPENAI_API_KEY)
+if OPENAI_BASE_URL:
+    os.environ.setdefault("OPENAI_BASE_URL", OPENAI_BASE_URL)
 
 # --- Qdrant (same as Day 18) ---
 QDRANT_HOST = "localhost"
@@ -44,9 +50,22 @@ OUTPUT_SET_PATH = os.path.join(FIXTURES_DIR, "output_set_4.json")
 GUARDRAILS_CONFIG_DIR = os.path.join(ROOT_DIR, "guardrails")
 PAIR_QUESTION_IDS = (1, 5, 12, 21, 41)
 
-# --- LLM Judge ---
-GENERATION_MODEL = "gpt-4o-mini"
-JUDGE_MODEL = "gpt-4o-mini"
+# --- LLM generation and judge ---
+GENERATION_MODEL = os.getenv("LAB_MODEL") or os.getenv("GENERATION_MODEL", "gpt-4o-mini")
+JUDGE_MODEL = os.getenv("JUDGE_MODEL", GENERATION_MODEL)
+EVALUATOR_MODEL = os.getenv("EVALUATOR_MODEL", JUDGE_MODEL)
+
+
+def openai_client():
+    """Create a client for OpenAI or an OpenAI-compatible provider."""
+    from openai import OpenAI
+
+    kwargs = {}
+    if OPENAI_API_KEY:
+        kwargs["api_key"] = OPENAI_API_KEY
+    if OPENAI_BASE_URL:
+        kwargs["base_url"] = OPENAI_BASE_URL
+    return OpenAI(**kwargs)
 
 # --- Guardrail latency budget ---
 LATENCY_BUDGET_P95_MS = 500  # Full guard target; Task 12 currently measures input guards only.
