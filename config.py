@@ -5,9 +5,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# --- API Keys ---
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+# --- API Keys & Custom Endpoints ---
+OPENAI_API_KEY = os.getenv("LAB_API_KEY") or os.getenv("OPENAI_API_KEY", "")
+OPENAI_BASE_URL = os.getenv("LAB_BASE_URL") or os.getenv("OPENAI_BASE_URL", "")
 HF_TOKEN = os.getenv("HF_TOKEN", "")  # Optional: for HuggingFace models
+
+if OPENAI_BASE_URL:
+    os.environ["OPENAI_BASE_URL"] = OPENAI_BASE_URL
+if OPENAI_API_KEY:
+    os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # --- Qdrant (same as Day 18) ---
 QDRANT_HOST = "localhost"
@@ -44,9 +50,10 @@ OUTPUT_SET_PATH = os.path.join(FIXTURES_DIR, "output_set_4.json")
 GUARDRAILS_CONFIG_DIR = os.path.join(ROOT_DIR, "guardrails")
 PAIR_QUESTION_IDS = (1, 5, 12, 21, 41)
 
-# --- LLM Judge ---
-GENERATION_MODEL = "gpt-4o-mini"
-JUDGE_MODEL = "gpt-4o-mini"
+# --- LLM Models ---
+MODEL_NAME = os.getenv("LAB_MODEL", "deepseek-v4.1-flash")
+GENERATION_MODEL = MODEL_NAME
+JUDGE_MODEL = MODEL_NAME
 
 # --- Guardrail latency budget ---
 LATENCY_BUDGET_P95_MS = 500  # Full guard target; Task 12 currently measures input guards only.

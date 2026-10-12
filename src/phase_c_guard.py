@@ -63,6 +63,10 @@ def pii_scan(text: str, analyzer=None, anonymizer=None) -> dict:
         analyzer, anonymizer = setup_presidio()
 
     results = analyzer.analyze(text=text, language=PRESIDIO_LANGUAGE)
+    # Lọc chỉ các thực thể PII mục tiêu theo yêu cầu bài Lab (VN_CCCD, VN_PHONE, EMAIL_ADDRESS)
+    target_entities = {"VN_CCCD", "VN_PHONE", "EMAIL_ADDRESS"}
+    results = [r for r in results if r.entity_type in target_entities]
+
     if not results:
         return {"has_pii": False, "entities": [], "anonymized": text}
 
@@ -84,6 +88,17 @@ def setup_nemo_rails():
         config.yml  — model + rails config
         rails.co    — câu từ chối Colang 1.0; built-in self-check flows được bật trong YAML
     """
+    try:
+        from nemoguardrails.llm.providers.providers import register_llm_provider
+        from langchain_openai import ChatOpenAI
+        class FastChatOpenAI(ChatOpenAI):
+            def __init__(self, *args, **kwargs):
+                kwargs.setdefault("request_timeout", 60.0)
+                kwargs.setdefault("max_retries", 3)
+                super().__init__(*args, **kwargs)
+        register_llm_provider("openai", FastChatOpenAI)
+    except Exception:
+        pass
     from nemoguardrails import RailsConfig, LLMRails
     config = RailsConfig.from_path(GUARDRAILS_CONFIG_DIR)
     rails  = LLMRails(config)
@@ -103,18 +118,24 @@ async def check_input_rail(text: str, rails=None) -> dict:
     if rails is None:
         rails = setup_nemo_rails()
 
-    result = await rails.generate_async(
-        messages=[{"role": "user", "content": text}],
-        options={"rails": ["input"], "log": {"activated_rails": True}},
-    )
-    response = result.response[0]["content"]
-    # Đọc quyết định rail; không suy ra blocked từ từ khóa có thể nằm trong input sạch.
-    blocked = any(rail.stop for rail in result.log.activated_rails)
-    return {
-        "allowed":        not blocked,
-        "blocked_reason": "nemo_input_rail" if blocked else None,
-        "response":       response,
-    }
+    for attempt in range(3):
+        try:
+            result = await rails.generate_async(
+                messages=[{"role": "user", "content": text}],
+                options={"rails": ["input"], "log": {"activated_rails": True}},
+            )
+            response = result.response[0]["content"]
+            # Đọc quyết định rail; không suy ra blocked từ từ khóa có thể nằm trong input sạch.
+            blocked = any(rail.stop for rail in result.log.activated_rails)
+            return {
+                "allowed":        not blocked,
+                "blocked_reason": "nemo_input_rail" if blocked else None,
+                "response":       response,
+            }
+        except Exception as e:
+            if attempt == 2:
+                raise e
+            await asyncio.sleep(2.0)
 
 
 async def check_output_rail(question: str, answer: str, rails=None) -> dict:
@@ -134,21 +155,27 @@ async def check_output_rail(question: str, answer: str, rails=None) -> dict:
     if rails is None:
         rails = setup_nemo_rails()
 
-    # Cung cấp context đầy đủ để output rail hoạt động
-    result = await rails.generate_async(
-        messages=[
-            {"role": "user", "content": question},
-            {"role": "assistant", "content": answer},
-        ],
-        options={"rails": ["output"], "log": {"activated_rails": True}},
-    )
-    response = result.response[0]["content"]
-    flagged = any(rail.stop for rail in result.log.activated_rails)
-    return {
-        "safe":           not flagged,
-        "flagged_reason": "nemo_output_rail" if flagged else None,
-        "final_answer":   response if flagged else answer,
-    }
+    for attempt in range(3):
+        try:
+            # Cung cấp context đầy đủ để output rail hoạt động
+            result = await rails.generate_async(
+                messages=[
+                    {"role": "user", "content": question},
+                    {"role": "assistant", "content": answer},
+                ],
+                options={"rails": ["output"], "log": {"activated_rails": True}},
+            )
+            response = result.response[0]["content"]
+            flagged = any(rail.stop for rail in result.log.activated_rails)
+            return {
+                "safe":           not flagged,
+                "flagged_reason": "nemo_output_rail" if flagged else None,
+                "final_answer":   response if flagged else answer,
+            }
+        except Exception as e:
+            if attempt == 2:
+                raise e
+            await asyncio.sleep(2.0)
 
 
 # ─── Task 10: Adversarial Test Suite ─────────────────────────────────────────
