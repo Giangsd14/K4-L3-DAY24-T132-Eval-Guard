@@ -31,7 +31,8 @@ def main(argv=None):
     for name in selected:
         runners[name]()
         print(f"Phase {name.upper()} saved to artifacts/.")
-    return 0
+    import os
+    os._exit(0)
 
 
 if __name__ == "__main__":

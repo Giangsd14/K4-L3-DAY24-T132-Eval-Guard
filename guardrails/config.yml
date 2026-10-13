@@ -3,7 +3,9 @@ colang_version: "1.0"
 models:
   - type: main
     engine: openai
-    model: gpt-4o-mini
+    model: deepseek-v4.1-flash
+    parameters:
+      base_url: "https://modelapi.vn/v1"
 
 instructions:
   - type: general
