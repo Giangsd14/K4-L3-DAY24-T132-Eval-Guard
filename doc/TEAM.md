@@ -6,7 +6,7 @@ Repo chung: https://github.com/Giangsd14/K4-L3-DAY24-T132-Eval-Guard
 
 Trưởng nhóm/người nộp: Nguyễn Thanh Giang - 2A202602576
 
-Ngày lab/deadline áp dụng: 13/10/2026 23:59 — Asia/Ho_Chi_Minh (UTC+07:00)
+Ngày lab/deadline áp dụng: 13/10/2026
 
 Commit dùng để chấm: b5d22d11ea9d685aeef049b6f88c0ef709876732
 
