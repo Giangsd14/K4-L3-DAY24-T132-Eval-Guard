@@ -33,6 +33,26 @@ hoặc pip resolve để khẳng định runtime đã chạy.
 
 ## INDIVIDUAL
 
+### Nguyen Phat Thinh-2A202602645
+
+- Phần được giao và phần thực tế đã làm: Member 1/Evaluation Lead; chuẩn bị
+  môi trường và 5 module RAG, tạo 50 answers live, implement Phase A Tasks
+  1-4 và Phase B Tasks 5-8, chạy hai live evaluation.
+- Bằng chứng: commits `cb16617`, `28d432b`, `9fccf8a`, `4397ebc`,
+  `f204598`, `a5c0295`, `31cf15a`; artifacts `answers_50q.json`,
+  `ragas_50q.json`, `judge_results.json`; reports `failure_clusters.md` và
+  `bias_report.md`.
+- Cách kiểm tra: `pytest tests/test_phase_a.py tests/test_phase_b.py
+  tests/test_report_contracts.py -q` đạt 44 passed; Phase A chạy 200 metric
+  jobs và Phase B tạo 5 pairwise results cùng 10 calibration judgments.
+- Điều đã học: cách giữ provenance model, source hashes, swap-and-average,
+  Cohen's kappa và phân tích failure cluster theo worst metric.
+- Giới hạn/cách xử lý: hai PDF scan không có text layer; enrichment DeepSeek
+  có JSON lỗi/rate-limit. Các giới hạn được ghi nhận, không thay bằng số liệu
+  giả.
+- Nguồn/AI hỗ trợ nếu có: dùng coding assistant để rà contract và test; mọi
+  artifact live, số đo và kết luận đều được kiểm tra lại từ file chạy thật.
+
 Sao chép mẫu cho mỗi thành viên; tiêu đề họ tên không dấu-MSSV.
 
 ### {{HoVaTen}}-{{MSSV}}
