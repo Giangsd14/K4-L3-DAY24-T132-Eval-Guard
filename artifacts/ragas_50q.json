@@ -29,8 +29,8 @@
       ],
       "ground_truth": "Hạn mức bảo hiểm sức khỏe PVI cho nhân viên là 200.000.000 VNĐ/năm, bao gồm nội trú, ngoại trú và nha khoa.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9725172645157105,
-      "context_precision": 0.9999999999,
+      "answer_relevancy": 0.9818387734019344,
+      "context_precision": 1.0,
       "context_recall": 1.0
     },
     {
@@ -61,7 +61,7 @@
       ],
       "ground_truth": "KHÔNG cho cả hai. Mentor và buddy phải là hai người khác nhau. Quản lý trực tiếp không được làm mentor hoặc buddy.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9041671100338614,
+      "answer_relevancy": 0.7930794449291604,
       "context_precision": 0.99999999995,
       "context_recall": 1.0
     },
@@ -109,7 +109,7 @@
       ],
       "ground_truth": "Nghỉ từ 16-30 ngày không lương cần phê duyệt của Giám đốc điều hành (CEO). Lưu ý: nghỉ trên 14 ngày không lương, nhân viên phải tự đóng phần bảo hiểm của mình.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8127464950770344,
+      "answer_relevancy": 0.8254486650315741,
       "context_precision": 0.9999999999,
       "context_recall": 0.5
     },
@@ -141,7 +141,7 @@
       ],
       "ground_truth": "Nam nhân viên được nghỉ 5 ngày làm việc liên tục khi vợ sinh con, không trừ vào phép năm.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9340681713562149,
+      "answer_relevancy": 0.9256014194161897,
       "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
@@ -157,7 +157,7 @@
       ],
       "ground_truth": "Nhân viên chính thức được phép làm việc từ xa tối đa 2 ngày/tuần. Lịch WFH phải được quản lý trực tiếp phê duyệt vào thứ Hai đầu tuần.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9735696616252734,
+      "answer_relevancy": 0.9982129575547521,
       "context_precision": 0.9999999999,
       "context_recall": 0.5
     },
@@ -175,7 +175,7 @@
       "faithfulness": 1.0,
       "answer_relevancy": 0.9063497049267462,
       "context_precision": 0.99999999995,
-      "context_recall": 1.0
+      "context_recall": 0.0
     },
     {
       "question_id": 12,
@@ -189,7 +189,7 @@
       ],
       "ground_truth": "Nhân viên chính thức có thời gian làm việc từ 6 tháng trở lên được thưởng Tết tối thiểu 1 tháng lương. Nhân viên dưới 6 tháng được hưởng pro-rata theo số tháng làm việc thực tế.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9789054647820941,
+      "answer_relevancy": 0.9720274932939481,
       "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
@@ -205,7 +205,7 @@
       ],
       "ground_truth": "Đánh giá hiệu suất diễn ra 2 lần/năm: tháng 6 (giữa năm, dùng để điều chỉnh mục tiêu) và tháng 12 (cuối năm, dùng để xét tăng lương và thưởng).",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9809303211469586,
+      "answer_relevancy": 0.9762520219976312,
       "context_precision": 0.8333333332916666,
       "context_recall": 1.0
     },
@@ -221,7 +221,7 @@
       ],
       "ground_truth": "Phải nộp giấy xác nhận y tế (giấy khám bệnh hoặc giấy ra viện) trong vòng 3 ngày làm việc kể từ ngày quay lại. Nếu không có giấy tờ hợp lệ, ngày nghỉ bị trừ vào phép năm.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9735833102038874,
+      "answer_relevancy": 0.9366087872075728,
       "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
@@ -237,8 +237,8 @@
       ],
       "ground_truth": "Tạm ứng dưới 5.000.000 VNĐ chỉ cần Trưởng phòng phê duyệt. Từ 5.000.000 VNĐ trở lên cần thêm phê duyệt của Kế toán trưởng.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8810697799900558,
-      "context_precision": 0.99999999995,
+      "answer_relevancy": 0.8934241223214954,
+      "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
     {
@@ -253,7 +253,7 @@
       ],
       "ground_truth": "Tài khoản VPN tự động bị khóa sau 60 ngày không hoạt động. Để kích hoạt lại cần gửi ticket IT kèm xác nhận quản lý trực tiếp, thời gian xử lý 1-2 ngày làm việc.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9837888749490952,
+      "answer_relevancy": 0.9972784522490002,
       "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
@@ -269,7 +269,7 @@
       ],
       "ground_truth": "Cấp Manager trở lên: 500.000 VNĐ/tháng. Cấp Lead: 300.000 VNĐ/tháng. Các cấp bậc khác (Junior, Senior) không có phụ cấp điện thoại.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8298966580850043,
+      "answer_relevancy": 0.9770728728877535,
       "context_precision": 0.9999999999,
       "context_recall": 0.6666666666666666
     },
@@ -285,7 +285,7 @@
       ],
       "ground_truth": "KPI cá nhân chiếm 70% tổng điểm (do quản lý trực tiếp đánh giá). Peer review chiếm 30% (do 3-5 đồng nghiệp đánh giá về hợp tác, giao tiếp và chuyên môn).",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9934335392120571,
+      "answer_relevancy": 0.991311188811029,
       "context_precision": 0.49999999995,
       "context_recall": 1.0
     },
@@ -301,8 +301,8 @@
       ],
       "ground_truth": "Thời gian thử việc tiêu chuẩn là 60 ngày. Đối với vị trí Manager trở lên, có thể kéo dài đến 90 ngày.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8640368541606143,
-      "context_precision": 0.99999999995,
+      "answer_relevancy": 0.865318238023879,
+      "context_precision": 0.0,
       "context_recall": 1.0
     },
     {
@@ -316,8 +316,8 @@
         "Trích từ cong_tac_phi.md. \n\n- Phụ cấp ngày theo quốc gia, thông thường 80-120 USD/ngày - Khách sạn tối đa 150 USD/đêm (thành phố lớn: 200 USD/đêm) - Bảo hiểm du lịch quốc tế bắt buộc, do công ty chi trả ## Quy trình thanh toán"
       ],
       "ground_truth": "Tối đa 2.000.000 VNĐ/tháng, dành cho nhân viên có tần suất công tác ngoài văn phòng trên 8 ngày/tháng. Phải có chứng từ hợp lệ (vé xe, hóa đơn xăng, Grab receipt).",
-      "faithfulness": 0.6666666666666666,
-      "answer_relevancy": 0.9547428272816152,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9672005371405453,
       "context_precision": 0.9999999999,
       "context_recall": 0.5
     },
@@ -332,9 +332,9 @@
         "Trích từ nghi_phep_nam_v2024.md. \n\n# Chính sách nghỉ phép năm (Phiên bản 2024) > Phiên bản: 2.0 | Ngày hiệu lực: 01/01/2024 | Phòng ban: Nhân sự ## Số ngày phép năm Mỗi nhân viên chính thức được hưởng **15 ngày phép năm** có lương, tăng từ 12 ngày so với chính sách năm 2023."
       ],
       "ground_truth": "Theo chính sách v2024: 15 ngày cơ bản + 3 ngày thâm niên (9÷3=3) = 18 ngày phép. Lương Senior (P3-P4): 20-35 triệu VNĐ/tháng.",
-      "faithfulness": 0.6666666666666666,
-      "answer_relevancy": 0.9358769975272566,
-      "context_precision": 0.9999999999,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.8333333332916666,
       "context_recall": 0.5
     },
     {
@@ -348,7 +348,7 @@
         "Trích từ nghi_phep_khong_luong.md. \n\nNghỉ từ 1-5 ngày: trưởng phòng phê duyệt. Nghỉ từ 6-15 ngày: cần thêm phê duyệt của Giám đốc Nhân sự. Nghỉ từ 16-30 ngày: cần phê duyệt của **Giám đốc điều hành (CEO)**. ## Ảnh hưởng đến phúc lợi"
       ],
       "ground_truth": "Laptop 30 triệu nằm trong khoảng 5-50 triệu nên cần Giám đốc phòng ban (Director) phê duyệt. Cần đính kèm ít nhất 3 báo giá (trên 10 triệu). Mua sắm thiết bị CNTT cần xác nhận cấu hình kỹ thuật từ phòng CNTT trước khi đề xuất.",
-      "faithfulness": 1.0,
+      "faithfulness": 0.5,
       "answer_relevancy": 0.0,
       "context_precision": 0.9999999999,
       "context_recall": 0.3333333333333333
@@ -365,7 +365,7 @@
       ],
       "ground_truth": "Nhân viên phải cam kết làm việc ít nhất 1 năm sau khi hoàn thành khóa học. Nghỉ sau 8 tháng là trước hạn cam kết, phải hoàn trả 100% chi phí tức 25.000.000 VNĐ.",
       "faithfulness": 0.5,
-      "answer_relevancy": 0.8203682409654222,
+      "answer_relevancy": 0.8408643880135818,
       "context_precision": 0.9999999999,
       "context_recall": 0.5
     },
@@ -381,9 +381,9 @@
       ],
       "ground_truth": "Thời hạn thanh toán là 15 ngày. Quá hạn 5 ngày: phí 2%/tháng trên 15.000.000 VNĐ, tính pro-rata = 2% × 15.000.000 × (5/30) ≈ 50.000 VNĐ.",
       "faithfulness": 0.0,
-      "answer_relevancy": 0.8519275801593071,
-      "context_precision": 0.99999999995,
-      "context_recall": 1.0
+      "answer_relevancy": 0.87648280126293,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 0.5
     },
     {
       "question_id": 25,
@@ -397,7 +397,7 @@
       ],
       "ground_truth": "Junior cao nhất là 20.000.000 VNĐ/tháng. Lương thử việc = 85% × 20.000.000 = 17.000.000 VNĐ/tháng.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9922638430039377,
+      "answer_relevancy": 0.9914231375848205,
       "context_precision": 0.3333333333,
       "context_recall": 1.0
     },
@@ -412,8 +412,8 @@
         "Trích từ nghi_phep_nam_v2023.md. \n\n# Chính sách nghỉ phép năm (Phiên bản 2023) > Phiên bản: 1.0 | Ngày hiệu lực: 01/01/2023 | Phòng ban: Nhân sự ## Số ngày phép năm Mỗi nhân viên chính thức được hưởng **12 ngày phép năm** có lương."
       ],
       "ground_truth": "Kết hôn bản thân: 3 ngày. Con kết hôn: 1 ngày. Tổng: 4 ngày làm việc có lương, tất cả không trừ vào phép năm.",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.907511511708067,
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.9263952295860438,
       "context_precision": 0.0,
       "context_recall": 1.0
     },
@@ -431,7 +431,7 @@
       "faithfulness": 1.0,
       "answer_relevancy": 0.0,
       "context_precision": 0.9999999999666667,
-      "context_recall": 1.0
+      "context_recall": 0.0
     },
     {
       "question_id": 28,
@@ -445,8 +445,8 @@
       ],
       "ground_truth": "Phụ cấp ăn trưa: 1.000.000 VNĐ. Phụ cấp điện thoại cấp Lead: 300.000 VNĐ. Tổng: 1.300.000 VNĐ/tháng.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9673804218938226,
-      "context_precision": 0.99999999995,
+      "answer_relevancy": 0.9786244283979604,
+      "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
     {
@@ -461,7 +461,7 @@
       ],
       "ground_truth": "Phê duyệt: 8 triệu (≥5 triệu) cần Trưởng phòng + Kế toán trưởng. Phí phạt quá hạn 15 ngày: 2%/tháng × 8.000.000 × (15/30) = 80.000 VNĐ. Không được tạm ứng mới cho đến khi hoàn ứng.",
       "faithfulness": 0.42857142857142855,
-      "answer_relevancy": 0.8741725740058068,
+      "answer_relevancy": 0.8855746693571994,
       "context_precision": 0.9999999999666667,
       "context_recall": 1.0
     },
@@ -477,8 +477,8 @@
       ],
       "ground_truth": "Nhân viên thử việc: chỉ được tham gia BHXH bắt buộc, KHÔNG được hưởng gói bảo hiểm sức khỏe PVI. Nhân viên chính thức: được hưởng BHXH + gói PVI hạn mức 200 triệu/năm (nội trú, ngoại trú, nha khoa).",
       "faithfulness": 0.9090909090909091,
-      "answer_relevancy": 0.8760902237796473,
-      "context_precision": 0.9999999999,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
       "context_recall": 0.5
     },
     {
@@ -492,10 +492,10 @@
         "Trích từ phu_cap.md. \n\nPhụ cấp này không áp dụng cho những ngày nghỉ phép, nghỉ ốm hoặc công tác ngoài. ## Phụ cấp đi lại Nhân viên có tần suất công tác ngoài văn phòng trên 8 ngày/tháng được hưởng phụ cấp đi lại theo thực tế, tối đa **2.000.000 VNĐ/tháng**."
       ],
       "ground_truth": "Mức tối đa thanh toán khách sạn trong nước là 1.200.000 VNĐ/đêm. Cho 2 đêm: tối đa 2 × 1.200.000 = 2.400.000 VNĐ. Phần vượt (300.000 VNĐ/đêm) nhân viên tự chi trả.",
-      "faithfulness": 0.6666666666666666,
+      "faithfulness": 0.4,
       "answer_relevancy": 0.8749708691395953,
       "context_precision": 0.9999999999,
-      "context_recall": 0.3333333333333333
+      "context_recall": 0.6666666666666666
     },
     {
       "question_id": 32,
@@ -508,8 +508,8 @@
         "Trích từ dao_tao_noi_bo.md. \n\n# Chính sách đào tạo nội bộ > Phiên bản: 1.3 | Ngày hiệu lực: 01/01/2024 | Phòng ban: Nhân sự & Đào tạo ## Yêu cầu đào tạo Mỗi phòng ban phải tổ chức tối thiểu **2 buổi đào tạo/quý** về chuyên môn hoặc kỹ năng mềm."
       ],
       "ground_truth": "Có, BẮT BUỘC. Theo chính sách đào tạo nội bộ, nhân viên mới trong 6 tháng đầu phải tham gia tất cả các buổi đào tạo của phòng ban. Nhân viên tháng thứ 3 (đang thử việc) vẫn nằm trong phạm vi 6 tháng đầu.",
-      "faithfulness": 0.2857142857142857,
-      "answer_relevancy": 0.9203781038285963,
+      "faithfulness": 0.3333333333333333,
+      "answer_relevancy": 0.8789216517357828,
       "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
@@ -524,9 +524,9 @@
         "Trích từ nghi_phep_nam_v2024.md. \n\nVí dụ: nhân viên 9 năm thâm niên được 18 ngày phép (15 + 3). ## Quy định sử dụng Phép năm phải được đăng ký trước ít nhất 2 ngày làm việc qua hệ thống HR Portal. Nghỉ phép từ 5 ngày trở lên cần được trưởng phòng phê duyệt."
       ],
       "ground_truth": "Phụ cấp tháng: ăn trưa 1.000.000 + điện thoại Manager 500.000 = 1.500.000 VNĐ. Phép năm v2024: 15 ngày cơ bản + 4 ngày thâm niên (12÷3=4) = 19 ngày phép.",
-      "faithfulness": 1.0,
+      "faithfulness": 0.5,
       "answer_relevancy": 0.0,
-      "context_precision": 0.9999999999666667,
+      "context_precision": 0.5833333333041666,
       "context_recall": 0.5
     },
     {
@@ -541,7 +541,7 @@
       ],
       "ground_truth": "4 triệu (dưới 5 triệu): chỉ cần Trưởng phòng phê duyệt. 7 triệu (từ 5 triệu trở lên): cần cả Trưởng phòng VÀ Kế toán trưởng phê duyệt. Cả hai đều có thời hạn hoàn ứng 15 ngày.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8662435795786183,
+      "answer_relevancy": 0.8604146576929493,
       "context_precision": 0.49999999995,
       "context_recall": 0.6666666666666666
     },
@@ -557,8 +557,8 @@
       ],
       "ground_truth": "Lương thử việc: 85% × 12.000.000 = 10.200.000 VNĐ. Phụ cấp ăn trưa áp dụng từ ngày đầu tiên: 1.000.000 VNĐ. Không có phụ cấp điện thoại (cấp Junior). Tổng nhận: 11.200.000 VNĐ.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8392463144453812,
-      "context_precision": 0.9999999999,
+      "answer_relevancy": 0.8423947525346401,
+      "context_precision": 0.99999999995,
       "context_recall": 0.25
     },
     {
@@ -573,7 +573,7 @@
       ],
       "ground_truth": "Tháng 6 (giữa năm): dùng để điều chỉnh mục tiêu cho nửa năm còn lại. Tháng 12 (cuối năm): dùng để xét tăng lương và tính thưởng Tết. Cả hai đều dựa trên KPI 70% + Peer review 30%.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9459432346271747,
+      "answer_relevancy": 0.9617325065979406,
       "context_precision": 0.9999999999,
       "context_recall": 0.6666666666666666
     },
@@ -588,7 +588,7 @@
         "Trích từ bao_mat_su_co.md. \n\nChỉ chia sẻ cho người cần xử lý theo nguyên tắc need-to-know, không đăng rộng rãi trên các kênh Slack nội bộ. ## Trách nhiệm"
       ],
       "ground_truth": "Vi phạm 2 chính sách: (1) Quy trình xử lý sự cố bảo mật: tuyệt đối không tự xử lý, phải báo cáo trong 1 giờ qua helpdesk@cty.vn — vi phạm này có thể bị kỷ luật đến sa thải. (2) Chính sách phân loại dữ liệu: thông tin sự cố bảo mật thuộc Bí mật/Tối mật, chỉ được chia sẻ theo need-to-know, không chia sẻ rộng rãi.",
-      "faithfulness": 0.75,
+      "faithfulness": 0.9,
       "answer_relevancy": 0.5110514454163039,
       "context_precision": 0.9999999999666667,
       "context_recall": 0.5
@@ -604,10 +604,10 @@
         "Trích từ cong_tac_phi.md. \n\nHồ sơ thanh toán công tác phí phải nộp trong vòng **7 ngày** sau khi kết thúc chuyến công tác. Hồ sơ bao gồm: phiếu công tác đã phê duyệt, boarding pass, hóa đơn khách sạn, các chứng từ khác."
       ],
       "ground_truth": "Tại thành phố lớn nước ngoài, mức tối đa thanh toán khách sạn là 200 USD/đêm. Khách sạn 200 USD/đêm = đúng mức tối đa. 3 đêm × 200 USD = 600 USD được thanh toán đầy đủ.",
-      "faithfulness": 0.16666666666666666,
-      "answer_relevancy": 0.9146781625629071,
+      "faithfulness": 0.14285714285714285,
+      "answer_relevancy": 0.9141725934845625,
       "context_precision": 0.9999999999,
-      "context_recall": 0.3333333333333333
+      "context_recall": 1.0
     },
     {
       "question_id": 39,
@@ -620,8 +620,8 @@
         "Trích từ mat_khau_v2.md. \n\nKhuyến khích sử dụng passphrase dài hơn 16 ký tự. ## Xác thực đa yếu tố (MFA) Tất cả nhân viên **bắt buộc** kích hoạt MFA cho tài khoản email, VPN và các hệ thống nội bộ."
       ],
       "ground_truth": "v1.0 (đã hết hiệu lực): tối thiểu 8 ký tự, đổi mỗi 90 ngày, không yêu cầu MFA. v2.0 (hiện hành): tối thiểu 12 ký tự, đổi mỗi 120 ngày, MFA bắt buộc cho tất cả: email, VPN và hệ thống nội bộ.",
-      "faithfulness": 0.8571428571428571,
-      "answer_relevancy": 0.9642251031607441,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9630829697103322,
       "context_precision": 0.0,
       "context_recall": 0.0
     },
@@ -636,8 +636,8 @@
         "Trích từ phan_loai_du_lieu.md. \n\n- **Tối mật**: mã hóa end-to-end, truy cập cần phê duyệt Giám đốc CNTT, log tất cả truy cập ## Vi phạm Vi phạm chính sách phân loại dữ liệu sẽ bị xử lý kỷ luật theo Quy chế kỷ luật công ty, mức cao nhất là sa thải và chịu trách nhiệm pháp lý."
       ],
       "ground_truth": "NÊN: báo cáo ngay trong vòng 1 giờ qua helpdesk@cty.vn hoặc hotline CNTT (ext. 9999). KHÔNG được: tự xử lý malware, xóa dấu vết, hoặc chia sẻ thông tin sự cố rộng rãi. Không báo cáo hoặc tự xử lý = vi phạm nghiêm trọng, có thể bị kỷ luật.",
-      "faithfulness": 1.0,
-      "answer_relevancy": 0.9302451001244747,
+      "faithfulness": 0.7777777777777778,
+      "answer_relevancy": 0.8807305566412578,
       "context_precision": 0.9999999999,
       "context_recall": 0.3333333333333333
     },
@@ -653,7 +653,7 @@
       ],
       "ground_truth": "Theo chính sách v2024 HIỆN HÀNH: 15 ngày cơ bản (+1 ngày/3 năm thâm niên). Chính sách v2023 (đã bị thay thế) là 12 ngày. RAG có thể retrieve cả 2 tài liệu — câu trả lời đúng phải ưu tiên v2024.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8251510116906489,
+      "answer_relevancy": 0.7860826990778296,
       "context_precision": 0.8333333332916666,
       "context_recall": 0.6666666666666666
     },
@@ -668,9 +668,9 @@
         "Trích từ nghi_phep_nam_v2024.md. \n\nVí dụ: nhân viên 9 năm thâm niên được 18 ngày phép (15 + 3). ## Quy định sử dụng Phép năm phải được đăng ký trước ít nhất 2 ngày làm việc qua hệ thống HR Portal. Nghỉ phép từ 5 ngày trở lên cần được trưởng phòng phê duyệt."
       ],
       "ground_truth": "Theo v2024 (hiện hành): từ 3 năm thâm niên, cứ mỗi 3 năm thêm 1 ngày. Chính sách v2023 (đã hết hiệu lực) yêu cầu 5 năm. Câu trả lời đúng là theo v2024.",
-      "faithfulness": 0.6666666666666666,
-      "answer_relevancy": 0.7664279711200974,
-      "context_precision": 0.49999999995,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7591227706192074,
+      "context_precision": 0.9999999999666667,
       "context_recall": 1.0
     },
     {
@@ -701,7 +701,7 @@
       ],
       "ground_truth": "Theo v2.0 HIỆN HÀNH: mỗi 120 ngày. Chính sách v1.0 (đã hết hiệu lực) là 90 ngày. Câu trả lời đúng là 120 ngày.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8625367307571384,
+      "answer_relevancy": 0.8617576524946163,
       "context_precision": 0.49999999995,
       "context_recall": 1.0
     },
@@ -748,8 +748,8 @@
         "Trích từ bao_mat_su_co.md. \n\n- **Trung bình**: phát hiện malware trên 1 máy, truy cập trái phép → xử lý trong 8 giờ - **Thấp**: email spam, cảnh báo antivirus tự động → xử lý trong 24 giờ"
       ],
       "ground_truth": "KHÔNG. Tuyệt đối không tự xử lý. Phải báo cáo trong vòng 1 giờ qua helpdesk@cty.vn hoặc hotline CNTT (ext. 9999). Tự xử lý bị coi là vi phạm nghiêm trọng.",
-      "faithfulness": 1.0,
-      "answer_relevancy": 0.9563600034765202,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.9057923250183757,
       "context_precision": 0.99999999995,
       "context_recall": 1.0
     },
@@ -780,7 +780,7 @@
         "Trích từ nghi_phep_nam_v2023.md. \n\nPhép năm phải được đăng ký trước ít nhất 3 ngày làm việc qua hệ thống HR Portal. Nghỉ phép từ 3 ngày trở lên cần được trưởng phòng phê duyệt. Phép năm không sử dụng hết có thể chuyển tối đa 5 ngày sang năm sau, hết hạn vào 31/03 năm kế tiếp."
       ],
       "ground_truth": "Chính sách cũ v2023 (ĐÃ HẾT HIỆU LỰC): 12 ngày phép, thêm 1 ngày/5 năm thâm niên. Chính sách HIỆN HÀNH v2024: 15 ngày cơ bản, thêm 1 ngày/3 năm thâm niên. Pipeline tốt phải nhận ra v2024 là bản hiệu lực.",
-      "faithfulness": 0.8333333333333334,
+      "faithfulness": 1.0,
       "answer_relevancy": 0.7943363514783278,
       "context_precision": 0.99999999995,
       "context_recall": 0.0
@@ -797,35 +797,35 @@
       ],
       "ground_truth": "KHÔNG. Chính sách VPN v1.3 cấm sử dụng VPN cá nhân (NordVPN, ExpressVPN) trong mạng công ty. Bắt buộc dùng VPN WireGuard của công ty. Đây là policy contradiction trap — câu hỏi nghe hợp lý nhưng vi phạm chính sách.",
       "faithfulness": 0.0,
-      "answer_relevancy": 0.8850206646945171,
+      "answer_relevancy": 0.8795039965295125,
       "context_precision": 0.9999999999,
-      "context_recall": 0.25
+      "context_recall": 0.0
     }
   ],
   "per_distribution": {
     "factual": {
       "count": 20,
-      "faithfulness": 0.9333333333333333,
-      "answer_relevancy": 0.8963245845168547,
-      "context_precision": 0.9166666665870832,
-      "context_recall": 0.7583333333333333,
-      "avg_score": 0.8761644794426511
+      "faithfulness": 0.95,
+      "answer_relevancy": 0.8994855166092044,
+      "context_precision": 0.8666666665920832,
+      "context_recall": 0.7083333333333333,
+      "avg_score": 0.8561213791336553
     },
     "multi_hop": {
       "count": 20,
-      "faithfulness": 0.7115259740259741,
-      "answer_relevancy": 0.7496286652963532,
-      "context_precision": 0.8416666666008332,
-      "context_recall": 0.6208333333333333,
-      "avg_score": 0.7309136598141235
+      "faithfulness": 0.690414862914863,
+      "answer_relevancy": 0.6593418328577948,
+      "context_precision": 0.762499999943125,
+      "context_recall": 0.5958333333333333,
+      "avg_score": 0.6770225072622791
     },
     "adversarial": {
       "count": 10,
-      "faithfulness": 0.85,
-      "answer_relevancy": 0.8722481636216664,
-      "context_precision": 0.8833333332641666,
-      "context_recall": 0.6583333333333333,
-      "avg_score": 0.8159787075547914
+      "faithfulness": 0.86,
+      "answer_relevancy": 0.8619244698217281,
+      "context_precision": 0.9333333332658332,
+      "context_recall": 0.6333333333333333,
+      "avg_score": 0.8221477841052236
     }
   },
   "failure_clusters": {
@@ -833,28 +833,28 @@
       "faithfulness": {
         "factual": 1,
         "multi_hop": 6,
-        "adversarial": 1
+        "adversarial": 2
       },
       "context_recall": {
-        "factual": 6,
-        "multi_hop": 7,
+        "factual": 7,
+        "multi_hop": 4,
         "adversarial": 6
       },
       "context_precision": {
-        "factual": 3,
-        "multi_hop": 3,
-        "adversarial": 2
+        "factual": 4,
+        "multi_hop": 4,
+        "adversarial": 1
       },
       "answer_relevancy": {
-        "factual": 10,
-        "multi_hop": 4,
+        "factual": 8,
+        "multi_hop": 6,
         "adversarial": 1
       }
     },
     "distribution_avg_scores": {
-      "factual": 0.8761644794426511,
-      "multi_hop": 0.7309136598141235,
-      "adversarial": 0.8159787075547914
+      "factual": 0.8561213791336553,
+      "multi_hop": 0.6770225072622791,
+      "adversarial": 0.8221477841052236
     },
     "dominant_failure_distribution": "multi_hop",
     "dominant_failure_metric": "context_recall",
@@ -873,93 +873,93 @@
     },
     {
       "rank": 2,
-      "question_id": 39,
+      "question_id": 30,
       "distribution": "multi_hop",
-      "question": "So sánh yêu cầu mật khẩu giữa policy v1.0 và v2.0 về độ dài tối thiểu, thời hạn đổi và MFA.",
-      "avg_score": 0.4553,
-      "worst_metric": "context_precision",
-      "diagnosis": "Too many irrelevant chunks",
-      "suggested_fix": "Add reranking or metadata filter"
-    },
-    {
-      "rank": 3,
-      "question_id": 26,
-      "distribution": "multi_hop",
-      "question": "Nhân viên vừa kết hôn và cùng tuần đó có con kết hôn. Tổng số ngày nghỉ đặc biệt có lương là bao nhiêu?",
-      "avg_score": 0.4769,
-      "worst_metric": "faithfulness",
-      "diagnosis": "LLM hallucinating",
-      "suggested_fix": "Tighten system prompt, lower temperature"
-    },
-    {
-      "rank": 4,
-      "question_id": 50,
-      "distribution": "adversarial",
-      "question": "Nhân viên Manager có thể dùng VPN cá nhân (như NordVPN) khi WFH để tăng bảo mật thêm không?",
-      "avg_score": 0.5338,
-      "worst_metric": "faithfulness",
-      "diagnosis": "LLM hallucinating",
-      "suggested_fix": "Tighten system prompt, lower temperature"
-    },
-    {
-      "rank": 5,
-      "question_id": 22,
-      "distribution": "multi_hop",
-      "question": "Nếu cần mua một chiếc laptop 30 triệu cho nhân viên mới, ai phê duyệt và cần gì từ phòng CNTT?",
-      "avg_score": 0.5833,
+      "question": "So sánh quyền lợi bảo hiểm giữa nhân viên thử việc và nhân viên chính thức.",
+      "avg_score": 0.3523,
       "worst_metric": "answer_relevancy",
       "diagnosis": "Answer doesn't match question",
       "suggested_fix": "Improve prompt template"
     },
     {
-      "rank": 6,
-      "question_id": 38,
+      "rank": 3,
+      "question_id": 33,
       "distribution": "multi_hop",
-      "question": "Nhân viên đi công tác nước ngoài 4 ngày tại thành phố lớn, ở khách sạn 200 USD/đêm (3 đêm). Công ty thanh toán bao nhiêu tiền khách sạn?",
-      "avg_score": 0.6037,
+      "question": "Nhân viên Manager có thâm niên 12 năm: tổng phụ cấp hàng tháng và số ngày phép năm theo v2024 là bao nhiêu?",
+      "avg_score": 0.3958,
+      "worst_metric": "answer_relevancy",
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "rank": 4,
+      "question_id": 22,
+      "distribution": "multi_hop",
+      "question": "Nếu cần mua một chiếc laptop 30 triệu cho nhân viên mới, ai phê duyệt và cần gì từ phòng CNTT?",
+      "avg_score": 0.4583,
+      "worst_metric": "answer_relevancy",
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "rank": 5,
+      "question_id": 50,
+      "distribution": "adversarial",
+      "question": "Nhân viên Manager có thể dùng VPN cá nhân (như NordVPN) khi WFH để tăng bảo mật thêm không?",
+      "avg_score": 0.4699,
       "worst_metric": "faithfulness",
       "diagnosis": "LLM hallucinating",
       "suggested_fix": "Tighten system prompt, lower temperature"
     },
     {
-      "rank": 7,
-      "question_id": 33,
+      "rank": 6,
+      "question_id": 39,
       "distribution": "multi_hop",
-      "question": "Nhân viên Manager có thâm niên 12 năm: tổng phụ cấp hàng tháng và số ngày phép năm theo v2024 là bao nhiêu?",
-      "avg_score": 0.625,
+      "question": "So sánh yêu cầu mật khẩu giữa policy v1.0 và v2.0 về độ dài tối thiểu, thời hạn đổi và MFA.",
+      "avg_score": 0.4908,
+      "worst_metric": "context_precision",
+      "diagnosis": "Too many irrelevant chunks",
+      "suggested_fix": "Add reranking or metadata filter"
+    },
+    {
+      "rank": 7,
+      "question_id": 27,
+      "distribution": "multi_hop",
+      "question": "Nhân viên có thâm niên 7 năm theo v2024 được nghỉ bao nhiêu ngày phép? Nếu bị trừ thêm 4 ngày ốm không có giấy y tế thì còn lại bao nhiêu?",
+      "avg_score": 0.5,
       "worst_metric": "answer_relevancy",
       "diagnosis": "Answer doesn't match question",
       "suggested_fix": "Improve prompt template"
     },
     {
       "rank": 8,
-      "question_id": 49,
-      "distribution": "adversarial",
-      "question": "Theo chính sách nghỉ phép cũ (v2023), nhân viên được nghỉ bao nhiêu ngày? Còn chính sách nào đang có hiệu lực hiện tại?",
-      "avg_score": 0.6569,
-      "worst_metric": "context_recall",
-      "diagnosis": "Missing relevant chunks",
-      "suggested_fix": "Improve chunking or add BM25"
+      "question_id": 21,
+      "distribution": "multi_hop",
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "avg_score": 0.5208,
+      "worst_metric": "answer_relevancy",
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
     },
     {
       "rank": 9,
-      "question_id": 37,
+      "question_id": 24,
       "distribution": "multi_hop",
-      "question": "Nhân viên tự ý xóa malware khỏi máy và chia sẻ thông tin sự cố này trên Slack nội bộ. Vi phạm những chính sách nào cụ thể?",
-      "avg_score": 0.6903,
-      "worst_metric": "context_recall",
-      "diagnosis": "Missing relevant chunks",
-      "suggested_fix": "Improve chunking or add BM25"
-    },
-    {
-      "rank": 10,
-      "question_id": 23,
-      "distribution": "multi_hop",
-      "question": "Nhân viên được tài trợ khóa học 25 triệu, nghỉ việc sau 8 tháng hoàn thành khóa học. Phải hoàn trả bao nhiêu?",
-      "avg_score": 0.7051,
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "avg_score": 0.5941,
       "worst_metric": "faithfulness",
       "diagnosis": "LLM hallucinating",
       "suggested_fix": "Tighten system prompt, lower temperature"
+    },
+    {
+      "rank": 10,
+      "question_id": 26,
+      "distribution": "multi_hop",
+      "question": "Nhân viên vừa kết hôn và cùng tuần đó có con kết hôn. Tổng số ngày nghỉ đặc biệt có lương là bao nhiêu?",
+      "avg_score": 0.6483,
+      "worst_metric": "context_precision",
+      "diagnosis": "Too many irrelevant chunks",
+      "suggested_fix": "Add reranking or metadata filter"
     }
   ],
   "metadata": {
@@ -970,12 +970,13 @@
         "deepseek-v4.1-flash"
       ],
       "evaluator": [
+        "BAAI/bge-m3",
         "deepseek-v4.1-flash"
       ],
       "judge": [],
       "guard": []
     },
-    "created_at": "2026-10-13T00:00:11.628925+00:00",
+    "created_at": "2026-10-13T00:38:54.744706+00:00",
     "source_sha256": {
       "answers_50q.json": "4a4ce6393b8d068f02e148eea6c9ccfc7665e10b0f3c42a8c83286364afcc88f",
       "test_set_50q.json": "0e87f26e020a32c62ea0864940720618f39600b9d3378193704cf2f86e88446d"

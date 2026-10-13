@@ -61,7 +61,9 @@ def evaluate_ragas(questions: list[str], answers: list[str],
             "context_recall": 0.0,
             "per_question": per_question
             ,
-            "metadata": {"evaluator_models": [EVALUATOR_MODEL]}
+            "metadata": {
+                "evaluator_models": [EVALUATOR_MODEL, EMBEDDING_MODEL],
+            }
         }
 
     try:
@@ -108,8 +110,7 @@ def evaluate_ragas(questions: list[str], answers: list[str],
             "context_recall": _bounded_score(result.get("context_recall")),
             "per_question": per_question,
             "metadata": {
-                "evaluator_models": [EVALUATOR_MODEL],
-                "embedding_model": EMBEDDING_MODEL,
+                "evaluator_models": [EVALUATOR_MODEL, EMBEDDING_MODEL],
             },
         }
     except Exception as e:
@@ -135,8 +136,7 @@ def evaluate_ragas(questions: list[str], answers: list[str],
             "per_question": per_question
             ,
             "metadata": {
-                "evaluator_models": [EVALUATOR_MODEL],
-                "embedding_model": EMBEDDING_MODEL,
+                "evaluator_models": [EVALUATOR_MODEL, EMBEDDING_MODEL],
             }
         }
 
